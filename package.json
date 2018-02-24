@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JacobGastelum/Homework-3/issues"
   },
-  "homepage": "https://github.com/JacobGastelum/Homework-3#readme"
+  "homepage": "https://github.com/JacobGastelum/Homework-3#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }

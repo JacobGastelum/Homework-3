@@ -23,10 +23,13 @@
         //     throw 'Enter an integer';
 
         // functions
-        // var array = new Array()
-        // for (i = start, i < end; step;) {
-        //     array[i] = i
-        // }
+        function createArray(start, end, step) {
+            let array = [];
+            for (let i = start; i <=end, step;) {
+                array.push(i);
+            }
+            return array;
+        }
         var sum = start + step + end
         var startBinary = Number(Math.abs(start)).toString(2)
         var stepBinary = Number(Math.abs(step)).toString(2)
@@ -38,7 +41,7 @@
 
         // alert('each function ' + output)
         const output = document.getElementById("output")
-        output.innerHTML = 'The generated array is: ' + start + "<br>" + 'The sum is: ' + sum + "<br>" + 'The binary of the elements\' absolute values are: ' + startBinary + ', ' + stepBinary + ', ' + endBinary
+        output.innerHTML = 'The generated array is: ' + createArray() + "<br>" + 'The sum is: ' + sum + "<br>" + 'The binary of the elements\' absolute values are: ' + startBinary + ', ' + stepBinary + ', ' + endBinary
     </script>
 </body>
 </html>

@@ -13,14 +13,19 @@
 
 
     <script>
+        const output = document.getElementById("output")
+        
         // asking for inputs
         const start = parseInt(prompt('Enter a starting value'))
         const step = parseInt(prompt('Enter a increment value'))
         const end = parseInt(prompt('Enter a ending value'))
         
         // error handling
-        // if (start != int)
-        //     throw 'Enter an integer';
+        if (isNaN(start) || isNaN(step) || isNaN(end) || step == 0) {
+            
+            throw (output.textContent = 'Invalid input, please refresh the page and try again')
+
+        }
 
         // functions
         function createArray(start, end, step) {
@@ -34,13 +39,9 @@
         var startBinary = Number(Math.abs(start)).toString(2)
         var stepBinary = Number(Math.abs(step)).toString(2)
         var endBinary = Number(Math.abs(end)).toString(2)
-        
-
-
     
 
         // alert('each function ' + output)
-        const output = document.getElementById("output")
         output.innerHTML = 'The generated array is: ' + createArray() + "<br>" + 'The sum is: ' + sum + "<br>" + 'The binary of the elements\' absolute values are: ' + startBinary + ', ' + stepBinary + ', ' + endBinary
     </script>
 </body>

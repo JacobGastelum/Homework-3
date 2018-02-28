@@ -12,14 +12,26 @@
 
 
     <script>
-        const start = prompt('Enter a starting value')
-        const step = prompt('Enter a increment value')
-        const end = prompt('Enter a ending value')
+        // asking for inputs
+        const start = parseInt(prompt('Enter a starting value'))
+        const step = parseInt(prompt('Enter a increment value'))
+        const end = parseInt(prompt('Enter a ending value'))
+        
+        // error handling
+        // if (start != int)
+        //     throw 'Enter an integer';
+
+        // functions
+        const array = range(start, step, end)
+        const sum = start + step + end
         
 
-        // alert('Your input is: ' + message)
+
+    
+
+        // alert('each function ' + output)
         const output = document.getElementById("output")
-        output.innerHTML = 'Your message is ' + start + step + end
+        output.innerHTML = 'The generated array is: ' + array + "<br>" + 'The sum is: ' + sum + "<br>" + 'The binary of absolute element values are: ' + end
     </script>
 </body>
 </html>

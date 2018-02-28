@@ -9,6 +9,7 @@
     <h3>The Program Output:</h3>
     <hr>
     <p id="output"></p>
+    <hr>
 
 
     <script>
@@ -22,8 +23,14 @@
         //     throw 'Enter an integer';
 
         // functions
-        const array = range(start, step, end)
-        const sum = start + step + end
+        // var array = new Array()
+        // for (i = start, i < end; step;) {
+        //     array[i] = i
+        // }
+        var sum = start + step + end
+        var startBinary = Number(Math.abs(start)).toString(2)
+        var stepBinary = Number(Math.abs(step)).toString(2)
+        var endBinary = Number(Math.abs(end)).toString(2)
         
 
 
@@ -31,7 +38,7 @@
 
         // alert('each function ' + output)
         const output = document.getElementById("output")
-        output.innerHTML = 'The generated array is: ' + array + "<br>" + 'The sum is: ' + sum + "<br>" + 'The binary of absolute element values are: ' + end
+        output.innerHTML = 'The generated array is: ' + start + "<br>" + 'The sum is: ' + sum + "<br>" + 'The binary of the elements\' absolute values are: ' + startBinary + ', ' + stepBinary + ', ' + endBinary
     </script>
 </body>
 </html>

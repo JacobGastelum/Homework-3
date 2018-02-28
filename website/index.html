@@ -12,11 +12,14 @@
 
 
     <script>
-        const message = prompt('Enter a message')
+        const start = prompt('Enter a starting value')
+        const step = prompt('Enter a increment value')
+        const end = prompt('Enter a ending value')
+        
 
         // alert('Your input is: ' + message)
         const output = document.getElementById("output")
-        output.innerHTML = 'Your message is ' + message
+        output.innerHTML = 'Your message is ' + start + step + end
     </script>
 </body>
 </html>
